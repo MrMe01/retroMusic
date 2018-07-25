@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class EmailController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('logout');
+    }
     /**
      * Display a listing of the resource.
      *

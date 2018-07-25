@@ -4,8 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CancionesController extends Controller
+class ArtistController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('logout');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +18,7 @@ class CancionesController extends Controller
      */
     public function index()
     {
-        //
+        return view('artist/profilePage');
     }
 
     /**

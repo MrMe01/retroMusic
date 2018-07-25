@@ -2,22 +2,10 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome/landingPage');
-});
+Route::get('/','WelcomeController@index');
 Auth::routes();
 
-Route::get('/home', function () {
-    return view('home/homePrincipalPage');
-});
+Route::get('/home','HomeController@index');
 
-
-Route::get('/song', function () {
-    return view('song/songsPage');
-    
-});
-
-
-Route::get('usuarios/profile', function () {
-    return view('usuarios/profilePage');
-});
+Route::resource('/song','SongController');
+Route::resource('/profile', 'ArtistController');
