@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Monserrat:400);
+
+html,body { 
+	height: 100%;
+	width: 100%;
+	font-family:  sans-serif;
+	color: #FFF;
+ }
+
+ #home { 
+
+    background: url(../images/bienvenida/landingHomePage.jpg) no-repeat 60% 60%;
+ 	display: table;
+ 	height: 100%;
+ 	width: 100%;
+ 	background-size: cover;
+ 	opacity : 0.9;
+ }
+
+ .landing-text {
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	text-align: center;
+ }
+
+ h1 {
+ 	font-family: 'Monserrat', sans-serif;
+ 	font-size: 800%;
+ 	line-height: .9;
+ 	  text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+ 	
+ }
+
+ h2 { 
+ 	font-size: 260%;
+ 	font-weight: 500;
+ 	line-height: 1.2;
+ 	 text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+  }
+
+
+  .btn-default{
+  
+  	font-size: 160%;
+ 
+  }
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 350%;
+	}
+	h2 { 
+		font-size: 150%;
+	 }
+
+	.btn-defaul {
+		font-size: 130%;
+	}
+}

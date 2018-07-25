@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Monserrat:400);
+
+body {
+	background-color: #cedeff;
+}
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #ed0e76;
+	color: #FFF;
+	padding: .5% 0;
+	font-size: 1.2em;
+	border: 0;
+}
+
+#logo {
+	max-width: 240px;
+	margin: 1% auto;
+}
+.navbar-brand {
+
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+	color: #FFF;
+	background-color: #ed0e76;
+}
+
+.navbar-inverse .navbar-nav li a{
+	color: #D5D5D5;
+}
+
+.carousel-caption{
+	text-align: right;
+	top: 50%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+
+#icon {
+	max-width: 200px;
+	margin: 1% auto;
+
+}
+
+#imgs {
+	border-radius: 10%;
+}
+.container {
+
+	margin: 4% auto;
+}
+
+footer {
+	width: 100%;
+	background-color: #ed0e76;
+	padding: 5%;
+	color: #FFF; 
+}
+
+#titulo {
+
+ 	font-family: 'Monserrat', sans-serif;
+ 	color: #FFF;
+ 	font-size: 400%;
+ 	line-height: .9;
+ 	  text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+}
+
+#titulo-sm {
+	font-family: 'Monserrat', sans-serif;
+ 	color: #FFF;
+ 	font-size: 150%;
+ 	line-height: .9;
+ 	  text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+}
+
+p {
+
+	font-family: 'Monserrat', sans-serif;
+ 	color: #093796;
+ 	font-size: 120%;
+ 	font-weight: bold;
+
+}
+
+
+#tituloIcon  {
+
+     font-family: 'Monserrat', sans-serif;
+ 	 color: #FFF;
+ 	 font-size: 150%;
+ 	 font-weight: bold;
+      text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	color: #FFF;
+
+}
+.fa:hover {
+	color: #D5D5D5;
+	text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+	.carousel-caption {
+
+		display: none;
+	}
+
+	#icon {
+		max-width: 150px;
+	}
+
+	h2 {
+		font-size: 1.9em;
+	}
+
+	#tituloIcon {
+		font-size: 130%;
+	}
+	#titulo{ 
+		font-size: 200%;
+	 }
+
+#logo {
+	max-width: 180px;
+	margin: 1% auto;
+}
+
+.navbar-brand {
+    min-height: 10px;
+    padding: 0 5px 5px;
+}
+
+
+}
+
+}
