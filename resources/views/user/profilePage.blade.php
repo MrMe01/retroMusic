@@ -15,7 +15,7 @@
         <div class="useravatar">
             <img alt="" src="{{URL::asset('images/artista/Katy-Perry.jpg')}}">
         </div>
-        <div class="card-info"> <span class="card-title">KATHYNKA</span>
+        <div class="card-info"> <span class="card-title">{{$user->pname}}</span>
 
         </div>
     </div>

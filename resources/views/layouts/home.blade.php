@@ -34,10 +34,10 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="/home">Principal</a></li>
-					<li><a href="#">Músicos</a></li>
+					<li><a href="musician">Músicos</a></li>
 					<li><a href="/song">Canciones</a></li>
-					<li><a href="#">Subir cancion</a></li>
-					<li><a href="/profile">Perfil</a></li>
+					<li><a href="/song/create/NICKDELVATOOOO">Subir cancion</a></li>
+					<li><a href="/musician">Perfil</a></li>
 			   </ul>
 				
 			</div>

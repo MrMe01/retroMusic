@@ -105,7 +105,9 @@
         <div class="tab-pane fade in active" id="tab1">
  
  
-  <form class="form-horizontal" action=" " method="post"  id="reg_form">
+  <form class="form-horizontal" method="POST" action="{{ route('register') }}"  id="reg_form">
+    
+    @csrf
     <fieldset>
       
       <!-- Form Name -->
@@ -238,6 +240,7 @@
               <option>Guitarrista</option>
               <option>Bajista</option>
               <option>Violinista</option>
+              <option>Trompetista</option>
             </select>
           </div>
         </div>
@@ -253,10 +256,16 @@
       <!-- Text input-->
       
       <div class="form-group">
-        <label class="col-md-4 control-label">Nombre Usuario</label>
+        <label class="col-md-4 control-label">Nick Name</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input  name="first_name" placeholder="Nombre usuario" class="form-control"  type="text">
+            <input  name="name" placeholder="Nombre usuario" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}"  type="text">
+
+            @if ($errors->has('name'))
+              <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('name') }}</strong>
+              </span>
+            @endif
           </div>
         </div>
       </div>
@@ -266,7 +275,12 @@
         <label class="col-md-4 control-label">Correo</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input name="email" placeholder="Direccion de correo electronico" class="form-control"  type="text">
+            <input name="email" placeholder="Direccion de correo electronico" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"  type="text">
+            @if ($errors->has('email'))
+              <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('name') }}</strong>
+              </span>
+            @endif
           </div>
         </div>
       </div>
@@ -295,7 +309,7 @@
                  <div class="col-md-6  inputGroupContainer">
                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
             <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirmar Contraseña" 
-                       name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                       name="password_confirmation" data-match="#confirmPassword" data-minLength="5"
                        data-match-error="some error 2"
                        required/>
                 <span class="glyphicon form-control-feedback"></span>
