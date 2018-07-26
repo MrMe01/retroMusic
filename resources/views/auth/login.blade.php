@@ -62,7 +62,14 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="form-group row row mb-0">
+                            <div class="col-md-8 offset-md-5">
+                            <a href="register">Registrate ahora!</a>    
+                            </div>
+                            
+                        </div>
                     </form>
+
                 </div>
             </div>
         </div>

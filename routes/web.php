@@ -8,4 +8,4 @@ Auth::routes();
 Route::get('/home','HomeController@index');
 
 Route::resource('/song','SongController');
-Route::resource('/profile', 'ArtistController');
+Route::resource('/musician', 'UserController');

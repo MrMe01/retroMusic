@@ -17,35 +17,6 @@
 </head>
 <body>
 	
-<nav class="navbar navbar-inverse">
-
-		<div class="container-fluid">
-			<div class="navbar-header">
-
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<a class="navbar-brand" href="#"><img id="logo" src="{{URL::asset('images/principal/logoNav.png')}}">
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="/home">Principal</a></li>
-					<li><a href="#">Músicos</a></li>
-					<li><a href="/song">Canciones</a></li>
-					<li><a href="#">Subir cancion</a></li>
-					<li><a href="/profile">Perfil</a></li>
-			   </ul>
-				
-			</div>
-		</div>
-    </nav>
-
-
-
     @yield('content');
 
 
