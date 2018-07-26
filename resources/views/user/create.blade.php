@@ -1,4 +1,4 @@
-@extends('layouts.home')
+}@extends('layouts.home')
 
 @section('title','RETROMUSIC')
 
@@ -130,6 +130,7 @@
               <option >Minnesota</option>
               <option>Mississippi</option>
               <option>Missouri</option>
+              <option selected="true">México</option>
               <option>Montana</option>
               <option>Nebraska</option>
               <option>Nevada</option>
@@ -254,7 +255,13 @@
     </div>
             
 
-  
+  <p id="song">
+    un texto aqui
+    <br>
+    de ejemplo
+  </p>
+  <p id="song2">
+  </p>
 
     
 <form method="POST" action="{{ route('logout') }}">
@@ -263,4 +270,13 @@
 </form>
 
 	</section>
+
+
+<script type="text/javascript">
+  var pp = document.getElementById('song');
+  var pp2 = document.getElementById('song2');
+  pp2.innerHTML = pp.innerHTML;
+</script>
+
+
 @endsection

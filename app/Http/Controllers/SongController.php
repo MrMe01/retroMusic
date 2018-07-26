@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
+use App\Models\Song;
 use Illuminate\Http\Request;
 
 class SongController extends Controller
@@ -17,7 +18,7 @@ class SongController extends Controller
      */
     public function index()
     {
-        return view('song/songsPage');
+        $songs = Song::paginate(1);
     }
 
     /**
@@ -27,7 +28,7 @@ class SongController extends Controller
      */
     public function create()
     {
-        //
+        return view('song/create');
     }
 
     /**

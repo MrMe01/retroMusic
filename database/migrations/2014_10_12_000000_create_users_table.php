@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('cel');
             $table->string('country');
-            $table->longText('briography');
+            $table->longText('biography');
             $table->string('type');   //cantante, pianista, etc
             $table->string('name')->unique();
             $table->string('email')->unique();
@@ -29,6 +29,8 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
+
+    
 
     /**
      * Reverse the migrations.

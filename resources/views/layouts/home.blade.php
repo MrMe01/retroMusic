@@ -36,8 +36,8 @@
 					<li class="active"><a href="/home">Principal</a></li>
 					<li><a href="musician">Músicos</a></li>
 					<li><a href="/song">Canciones</a></li>
-					<li><a href="/song/create/NICKDELVATOOOO">Subir cancion</a></li>
-					<li><a href="/musician">Perfil</a></li>
+					<li><a href="/song/create">Subir cancion</a></li>
+					<li><a href="/musician/create">Perfil</a></li>
 			   </ul>
 				
 			</div>

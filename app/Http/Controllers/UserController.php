@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\User;
 class UserController extends Controller
 {
 
@@ -18,8 +19,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
-        return view('user/profilePage',compact('user'));
+        $usuarios = User::paginate(1);
+        return view('user/index',compact('usuarios'));
     }
 
     /**
@@ -30,6 +31,8 @@ class UserController extends Controller
     public function create()
     {
         //
+        $user = Auth::user();
+        return view('user/create',compact('user'));
     }
 
     /**

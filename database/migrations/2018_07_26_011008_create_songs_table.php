@@ -15,10 +15,12 @@ class CreateSongsTable extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('chords'); // la cancion
-            $table->string('tone');  // tono en el que está
-            $table->integer('type'); //1 , 0 --- normal o drag and drop
-            $table->integer('downloaded'); // cuantas descargas tiene 
+            $table->string('name');
+            $table->string('album');
+            $table->string('genero');
+            $table->string('tone');         // tono en el que está
+            $table->longText('chords');     // la cancion
+            $table->integer('downloaded');  // cuantas descargas tiene 
             $table->timestamps();
         });
     }
